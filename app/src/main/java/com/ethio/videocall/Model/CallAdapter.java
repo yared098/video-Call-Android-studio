@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.ethio.videocall.CallingActivity;
 import com.ethio.videocall.MainManu;
 import com.ethio.videocall.Model.ModelCall;
 import com.ethio.videocall.R;
@@ -38,11 +39,12 @@ public class CallAdapter  extends ArrayAdapter<ModelCall> {
         callerProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getContext(), MainManu.class);
+                Intent intent=new Intent(getContext(), CallingActivity.class);
                 intent.putExtra("name", modelCaller.getCourse_name());
                 intent.putExtra("number", modelCaller.getImgid());
                 intent.putExtra("index",position);
                 getContext().startActivity(intent);
+
             }
         });
 

@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/img3"
+    android:id="@+id/bgcallActiviry"
     tools:context=".CallingActivity">
 
   <TextView
@@ -15,7 +16,7 @@
       android:text="John Doe"
       android:textAlignment="center"
       android:textSize="36sp"
-      android:textColor="#151414"
+      android:textColor="#CFABAB"
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
@@ -25,6 +26,7 @@
       app:layout_constraintVertical_bias="0.206" />
 
   <androidx.cardview.widget.CardView
+
       android:id="@+id/cardView"
       android:layout_width="70dp"
       android:layout_height="70dp"
@@ -35,10 +37,10 @@
       app:layout_constraintHorizontal_bias="0.184"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.842"
+      app:layout_constraintVertical_bias="0.839"
       tools:ignore="MissingConstraints" >
     <ImageView
-        android:id="@+id/img"
+        android:id="@+id/imgdecline"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
@@ -74,7 +76,7 @@
       android:layout_width="match_parent"
       android:layout_height="39dp"
       android:gravity="center"
-      android:text="Incamming call..."
+      android:text="Incoming call..."
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintVertical_bias="0.263"
@@ -85,7 +87,7 @@
       android:id="@+id/textView4"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginStart="69dp"
+      android:layout_marginStart="60dp"
       android:layout_marginEnd="264dp"
       android:text="Decline"
       android:textColor="@color/white"
@@ -96,7 +98,7 @@
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.916" />
+      app:layout_constraintVertical_bias="0.914" />
 
   <TextView
       android:id="@+id/textView5"

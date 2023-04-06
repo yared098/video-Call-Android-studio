@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img6"
+    android:background="@drawable/img5"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -70,6 +70,7 @@
             >
             <!-- simple image view -->
             <ImageView
+                android:id="@+id/imgcall"
                 android:layout_width="48dp"
                 android:layout_height="47dp"
                 android:layout_gravity="center"
@@ -81,8 +82,9 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
+
         android:layout_width="413dp"
-        android:layout_height="136dp"
+        android:layout_height="100dp"
         android:bottomRightRadius="18dp"
         app:cardBackgroundColor="#2E3A40"
         app:cardCornerRadius="20dp"
@@ -94,11 +96,12 @@
         tools:ignore="MissingConstraints">
 
         <LinearLayout
+            android:gravity="center"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
@@ -114,6 +117,7 @@
                 >
                 <!-- simple image view -->
                 <ImageView
+                    android:id="@+id/imgcamera"
                     android:layout_width="48dp"
                     android:layout_height="47dp"
                     android:layout_gravity="center"
@@ -152,6 +156,7 @@
                 app:cardElevation="16dp">
                 <!-- simple image view -->
                 <ImageView
+                    android:id="@+id/imgrotate"
                     android:layout_width="48dp"
                     android:layout_height="47dp"
                     android:layout_gravity="center"
